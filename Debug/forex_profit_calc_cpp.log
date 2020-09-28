@@ -1,0 +1,7 @@
+﻿  Main.cpp
+C:\Users\ritch\source\repos\forex_profit_calc_cpp\forex_profit_calc_cpp\Simulator.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ritch\source\repos\forex_profit_calc_cpp\forex_profit_calc_cpp\Main.cpp(31,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Simulator.cpp
+C:\Users\ritch\source\repos\forex_profit_calc_cpp\forex_profit_calc_cpp\Simulator.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Generating Code...
+  forex_profit_calc_cpp.vcxproj -> C:\Users\ritch\source\repos\forex_profit_calc_cpp\Debug\forex_profit_calc_cpp.exe
