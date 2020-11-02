@@ -7,14 +7,7 @@
 
 using namespace std;
 
-int drive2() {
-	SimulatorConfiguration config;
-	config.breakEvenDecimal = 0.25;
-	cout << "According to the config, the break-even rate is: " << config.breakEvenDecimal << endl;
-	return 0;
-}
-
-void drive3(int argc, char* argv[]) {
+void drive(int argc, char* argv[]) {
 	for (int i = 0; i < argc; i++) {
 		cout << argv[i] << endl;
 	}
@@ -33,20 +26,7 @@ void drive3(int argc, char* argv[]) {
 	s.runSimulations();
 }
 
-// Driver code...unfortunately
-void drive4() {
-	map<string, double> sampleSimulationOutput;
-	sampleSimulationOutput.insert(pair<string, double>("minPortfolioAmount", 40000));
-	sampleSimulationOutput.insert(pair<string, double>("maxPortfolioAmount", 90000));
-
-	cout << sampleSimulationOutput["minPortfolioAmount"] << endl;
-	cout << sampleSimulationOutput["maxPortfolioAmount"] << endl;
-
-	JSONFileCreator jfc(sampleSimulationOutput);
-	jfc.createJSONFile("target.json");
-}
-
 int main(int argc, char *argv[]) {
 	srand(time(0));
-	drive3(argc, argv);
+	drive(argc, argv);
 }
